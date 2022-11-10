@@ -39,7 +39,7 @@ sh "ansible-playbook ansible/docker-registry.yml  -i ansible/inventory/host.yml 
 	     stage ('Monitoring'){
 steps{
 script{
-sh "/usr/local/bin/docker-compose up --build  -d"
+sh "docker-compose up --build  -d"
 }
 }
 }
